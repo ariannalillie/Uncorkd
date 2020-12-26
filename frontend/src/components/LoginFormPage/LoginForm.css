@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.form-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 960px;
+    background-color: #696969;
+
+}
+
+.image-container {
+    background-color: black;
+    background-image: url("../../media/wine-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-header {
+    color: white;
+
+}
+
+.app-name {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+}
