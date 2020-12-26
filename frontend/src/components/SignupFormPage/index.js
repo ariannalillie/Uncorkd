@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
+import { NavLink } from 'react-router-dom';
 import './SignupForm.css';
 
 function SignupFormPage() {
@@ -28,51 +29,56 @@ function SignupFormPage() {
   };
 
   return (
-    <>
-      <h1>Sign Up</h1>
+    <div className="grid-container">
+      <div className="image-container"></div>
+      <div className='form-page'>
+      <h1 className="app-name">Uncorked</h1>
+      <h2 className="form-header">Please complete to create your account.</h2>
       <form onSubmit={handleSubmit}>
         <ul>
           {errors.map((error, idx) => <li key={idx}>{error}</li>)}
         </ul>
-        <label>
-          Email
+        <div className='form-items'>
           <input
+            className="user-input"
+            placeholder="Email"
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
-        </label>
-        <label>
-          Username
           <input
+            className="user-input"
+            placeholder="Username"
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required
           />
-        </label>
-        <label>
-          Password
           <input
+            className="user-input"
+            placeholder="Password"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
           />
-        </label>
-        <label>
-          Confirm Password
           <input
+            className="user-input"
+            placeholder="Confirm Password"
             type="password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
             required
           />
-        </label>
-        <button type="submit">Sign Up</button>
+        <button className="form-button" type="submit">Sign Up</button>
+        </div>
+        <div>
+        <NavLink className='switch-form-link' to="/login">Already have an account? Log in here.</NavLink>
+        </div>
       </form>
-    </>
+    </div>
+    </div>
   );
 }
 

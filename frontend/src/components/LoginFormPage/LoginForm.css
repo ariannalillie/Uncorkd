@@ -30,10 +30,57 @@
 
 .form-header {
     color: white;
+    font-size: 20px;
+    font-weight: 50;
+    margin-top: 40px;
 
 }
 
 .app-name {
     font-family: 'Dancing Script', cursive;
+    color: white;
+    margin-top: 100px;
+    font-size: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+.user-input {
+    height: auto;
+    letter-spacing: 0.00px;
+    line-height: 25px;
+    margin-bottom: 32px;
+    margin-left: 6.08px;
+    margin-top: 32px;
+    min-height: 23px;
+    min-width: 126px;
+    text-align: left;
+    white-space: nowrap;
+    width: 200px;
+    background-color: #696969;
+    color: #ffffff;
+    border: none;
+    border-bottom: 2px solid white;
+  }
+
+.form-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 40px;
+    border-radius: 7px;
+    color: #f16236;
+}
+
+.form-button:hover {
+    background-color: #f16236;
+    color: white;
+}
+
+.switch-form-link {
     color: white;
 }
