@@ -17,7 +17,7 @@ module.exports = {
       },
       wine_id: {
         type: Sequelize.INTEGER,
-        references: { model: Wineries }
+        references: { model: 'Wineries' }
 
       },
       createdAt: {

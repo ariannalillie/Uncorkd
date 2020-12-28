@@ -17,15 +17,15 @@ module.exports = {
       user_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: { model: Users }
+        references: { model: 'Users' }
       },
       wine_id: {
         type: Sequelize.INTEGER,
-        references: { model: Wines }
+        references: { model: 'Wines' }
       },
       winery_id: {
         type: Sequelize.INTEGER,
-        references: { model: Wineries }
+        references: { model: 'Wineries' }
       },
       createdAt: {
         allowNull: false,
