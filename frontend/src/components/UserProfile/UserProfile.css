@@ -1,0 +1,14 @@
+.profile-image-container {
+    background-color: turquoise;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+}
+
+.profile-header-container {
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
