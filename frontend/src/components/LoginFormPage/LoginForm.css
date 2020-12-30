@@ -16,7 +16,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     height: 960px;
-    background-color: #696969;
+
 
 }
 .logo {
@@ -71,7 +71,7 @@
     text-align: left;
     white-space: nowrap;
     width: 200px;
-    background-color: #696969;
+    background-color: rgba(167, 224, 255, 0.153);
     color: #ffffff;
     border: none;
     border-bottom: 2px solid white;
