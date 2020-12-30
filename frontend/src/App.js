@@ -33,6 +33,9 @@ function App() {
           <Route path="/wineries" >
             <Wineries />
           </Route>
+          <Route path="/profile">
+            <UserProfile />
+          </Route>
         </Switch>
       )}
     </>

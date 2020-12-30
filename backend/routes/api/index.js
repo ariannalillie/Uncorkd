@@ -43,6 +43,6 @@ router.post('/test', function (req, res) {
 router.use('/session', sessionRouter);
 
 router.use('/users', usersRouter);
-router.use('/wineries', wineriesRouter)
+router.use('/wineries', wineriesRouter);
 
 module.exports = router;

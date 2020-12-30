@@ -5,7 +5,7 @@ module.exports = {
 
 
       return queryInterface.bulkInsert('Wineries', [
-        {name:"14 Hands",location:"WA",website:"www.14handswine.com", createdAt: new Date(), updatedAt: new Date()},
+        {name:"14 Hands",location:"WA",website:"www.14hands.com", createdAt: new Date(), updatedAt: new Date()},
         {name:"Abacela Vineyards & Winery",location:"OR",website:"www.abacela.com", createdAt: new Date(), updatedAt: new Date()},
         {name:"Abarbanel Wine Co.",location:"NY",website:"www.kosher-wine.com", createdAt: new Date(), updatedAt: new Date()},
         {name:"Abbott Winery",location:"CA",website:"www.abbottwinery.com", createdAt: new Date(), updatedAt: new Date()},
