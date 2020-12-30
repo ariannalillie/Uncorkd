@@ -45,10 +45,10 @@
     padding-bottom: 0;
 }
 
-::placeholder {
+/* ::placeholder {
     color: white;
     font-size: 15px;
-}
+} */
 
 .user-input {
     height: auto;

@@ -1,3 +1,11 @@
 .profile-dropdown {
   position: absolute;
 }
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: violet;
+}
