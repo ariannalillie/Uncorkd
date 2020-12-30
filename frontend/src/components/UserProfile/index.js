@@ -15,6 +15,15 @@ console.log(currentUser)
                     <h2>{currentUser.username}</h2>
                 </div>
             </div>
+            <div>
+                <h1>Your Recent Activity</h1>
+                <hr/>
+                <div className="profile-header-container">
+                <div className='profile-image-container'></div>
+                <h2>{currentUser.name} visited 14 Hands Winery</h2>
+                </div>
+
+            </div>
         </>
     )
 };

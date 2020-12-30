@@ -4,6 +4,7 @@ import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../store/session";
 import { NavLink } from 'react-router-dom';
 import './SignupForm.css';
+import logo from "../../media/wines.svg"
 
 function SignupFormPage() {
   const dispatch = useDispatch();
@@ -33,6 +34,7 @@ function SignupFormPage() {
     <div className="grid-container">
       <div className="image-container"></div>
       <div className='form-page'>
+      <img src={logo} alt="Logo" className='logo'/>
       <h1 className="app-name">Uncorked</h1>
       <h2 className="form-header">Please complete to create your account.</h2>
       <form onSubmit={handleSubmit}>

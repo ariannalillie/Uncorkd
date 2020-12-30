@@ -3,7 +3,7 @@ import * as sessionActions from "../../store/session";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { NavLink } from 'react-router-dom';
-import logo from "../../media/logo.png"
+import logo from "../../media/wines.svg"
 import './LoginForm.css';
 
 function LoginFormPage() {
@@ -13,7 +13,7 @@ function LoginFormPage() {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
 
-  if (sessionUser) return <Redirect to="/" />;
+  if (sessionUser) return <Redirect to="/profile" />;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,8 +28,8 @@ function LoginFormPage() {
     <div className="grid-container">
     <div className="image-container"></div>
     <div className='form-page'>
+    <img src={logo} alt="Logo" className='logo'/>
       <h1 className="app-name">Uncorked</h1>
-      {/* <img src={logo} alt="Logo" /> */}
       <h2 className="form-header">Welcome back! Please login to your account.</h2>
       <form onSubmit={handleSubmit}>
         <ul>

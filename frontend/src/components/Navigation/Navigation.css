@@ -2,10 +2,36 @@
   position: absolute;
 }
 
-.nav-container {
+.nav-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: violet;
+  /* background-color:lightblue; */
+  padding: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  font-size: 45px;
+}
+
+.button {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 7%;
+  border: solid 1px white;
+  font-size: 15px;
 }

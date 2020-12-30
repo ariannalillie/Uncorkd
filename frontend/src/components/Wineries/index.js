@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import './Wineries.css';
+import logo from "../../media/home-image.svg"
 
 
 function Wineries() {
@@ -26,9 +28,11 @@ function Wineries() {
     return (
         <>
             <form onSubmit={submitForm}>
-                <input placeholder="🍷 Find a Winery" value={query} onChange={(e) => setQuery(e.target.value)}></input>
+                <input className="search-bar" placeholder="🍷 Find a Winery" value={query} onChange={(e) => setQuery(e.target.value)}></input>
             </form>
-            <h1>Wineries</h1>
+            <h1 className="search-header">Wineries</h1>
+            <img src={logo} alt="Logo" className='home-image'/>
+            <hr/>
             {wineries.map((winery) => {
                     const { id, name, location, website } = winery;
                     console.log(website)
