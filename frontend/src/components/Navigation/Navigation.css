@@ -36,3 +36,13 @@
   font-size: 20px;
   font-family: 'Darker Grotesque', sans-serif;
 }
+
+.avatar-button {
+  outline: inherit;
+  border: none;
+  background-color: transparent;
+}
+.profile-avatar {
+  height: 80px;
+  width: auto;
+}

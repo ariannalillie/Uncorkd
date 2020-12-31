@@ -3,9 +3,14 @@ body {
     background-image: linear-gradient(to bottom, #4c6bf3, #417af8, #3b88fc, #3d95fd, #47a2fe, #42adff, #43b7ff, #4cc0ff, #47caff, #49d3ff, #52dcfd, #5fe4fb);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    /* background-position: bottom; */
     background-attachment: fixed;
     height: auto;
+}
+
+.bartender-guy {
+    position: fixed;
+    bottom: 0px;
+    right: 200px;
 }
 
 .home-image {

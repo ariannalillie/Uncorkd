@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .form-items {
@@ -12,15 +13,13 @@
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 960px;
-
-
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ height: fit-content;
 }
 .logo {
-    height: 70px;
+    height: 50px;
     width: auto;
     margin: 0;
     padding: 0;
@@ -33,7 +32,7 @@
     color: white;
     font-size: 20px;
     font-weight: 50;
-    margin-top: 40px;
+    margin-top: 20px;
 
 }
 
@@ -56,9 +55,9 @@
     height: auto;
     letter-spacing: 0.00px;
     line-height: 25px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     margin-left: 6.08px;
-    margin-top: 32px;
+    margin-top: 20px;
     min-height: 23px;
     min-width: 126px;
     text-align: left;
@@ -74,11 +73,11 @@
     margin-bottom: 30px;
     height: 40px;
     border-radius: 7px;
-    color: #f16236;
+    color: #2ed9c2;
 }
 
 .form-button:hover {
-    background-color: #f16236;
+    background-color: #2ed9c2;
     color: white;
 }
 

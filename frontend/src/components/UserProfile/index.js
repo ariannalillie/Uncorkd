@@ -1,15 +1,18 @@
 import "./UserProfile.css"
 import { useSelector } from 'react-redux';
+import profileImage from '../../media/profile-image.svg'
 
 function UserProfile() {
     const currentUser = useSelector(state => {
         return state.session.user;
     });
-console.log(currentUser)
+    console.log(currentUser)
     return (
         <>
             <div className="profile-header-container">
-                <div className='profile-image-container'></div>
+                <div>
+                    <img src={profileImage} alt='' className='profile-avatar' />
+                </div>
                 <div className='column-container'>
                     <h1>{currentUser.name}</h1>
                     <h2>{currentUser.username}</h2>
@@ -17,10 +20,12 @@ console.log(currentUser)
             </div>
             <div>
                 <h1>Your Recent Activity</h1>
-                <hr/>
+                <hr />
                 <div className="profile-header-container">
-                <div className='profile-image-container user-activity-image'></div>
-                <h2 className="user-activity">{currentUser.name} visited 14 Hands Winery</h2>
+                    <div>
+                        <img src={profileImage} alt='' className='profile-avatar' />
+                    </div>
+                    <h2 className="user-activity">{currentUser.name} visited 14 Hands Winery</h2>
                 </div>
 
             </div>

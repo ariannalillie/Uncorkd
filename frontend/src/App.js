@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 import HomePage from "./components/HomePage"
 import Wineries from "./components/Wineries";
+import Reviews from "./components/Reviews"
 
 function App() {
   const dispatch = useDispatch();
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/profile">
             <UserProfile />
+          </Route>
+          <Route path="/reviews">
+            <Reviews />
           </Route>
         </Switch>
       )}

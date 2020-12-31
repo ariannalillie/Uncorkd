@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from 'react-redux';
 import { useHistory } from "react-router-dom";
 import * as sessionActions from '../../store/session';
+import profileImage from '../../media/profile-image.svg'
 
 function ProfileButton({ user }) {
   const dispatch = useDispatch();
@@ -37,8 +38,8 @@ function ProfileButton({ user }) {
 
   return (
     <>
-      <button onClick={openMenu}>
-        <i className="fas fa-user-circle" />
+      <button className="avatar-button" onClick={openMenu}>
+        <img src={profileImage} alt='' className='profile-avatar'/>
       </button>
       {showMenu && (
         <ul className="profile-dropdown">
