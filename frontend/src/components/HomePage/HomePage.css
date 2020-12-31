@@ -13,3 +13,12 @@ body {
     bottom: 2px;
     right: 2px;
 }
+
+.tagline {
+    position: relative;
+    font-size: 25px;
+    padding-left: 18px;
+    padding-top: 0%;
+    color: white;
+    font-family: 'Darker Grotesque', sans-serif;
+}

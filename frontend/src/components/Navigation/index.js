@@ -10,7 +10,11 @@ function Navigation({ isLoaded }) {
   let sessionLinks;
   if (sessionUser) {
     sessionLinks = (
+      <div>
+      <NavLink className='nav-link button' to="/wineries">Find a Winery</NavLink>
+      <NavLink className='nav-link button' to="/profile">Profile</NavLink>
       <ProfileButton user={sessionUser} />
+      </div>
     );
   } else {
     sessionLinks = (
@@ -26,8 +30,6 @@ function Navigation({ isLoaded }) {
       <NavLink className="header nav-link" exact to="/">Uncorkd</NavLink>
       <div className='nav-container'>
           {isLoaded && sessionLinks}
-          {/* <NavLink to="/wineries">Find a Winery</NavLink>
-          <NavLink to="/profile">Profile</NavLink> */}
       </div>
     </div>
 

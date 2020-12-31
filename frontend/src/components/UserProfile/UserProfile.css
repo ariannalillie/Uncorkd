@@ -23,3 +23,12 @@
     flex-direction: row;
     align-items: center;
 }
+
+.user-activity {
+    font-size: 15px;
+}
+
+.user-activity-image {
+    height: 25px;
+    width: 25px;
+}

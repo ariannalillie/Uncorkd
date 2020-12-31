@@ -28,13 +28,6 @@
     top: 100px
 }
 
-.image-container {
-    background-color: black;
-    background-image: url("../../media/wine-image.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .form-header {
     color: white;
@@ -73,8 +66,7 @@
     width: 200px;
     background-color: rgba(167, 224, 255, 0.153);
     color: #ffffff;
-    border: none;
-    border-bottom: 2px solid white;
+    border: 2px solid white;
   }
 
 .form-button {

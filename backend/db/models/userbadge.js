@@ -6,6 +6,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   UserBadge.associate = function(models) {
     // associations can be defined here
+    UserBadge.belongsTo(models.Badge, {foreignKey: "badge_id"})
+    UserBadge.belongsTo(models.User, {foreignKey: "user_id"})
   };
   return UserBadge;
 };

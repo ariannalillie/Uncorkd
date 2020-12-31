@@ -30,8 +30,9 @@
 
 .button {
   color: white;
-  padding: 10px 20px;
+  padding: 7px 20px;
   border-radius: 7%;
   border: solid 1px white;
-  font-size: 15px;
+  font-size: 20px;
+  font-family: 'Darker Grotesque', sans-serif;
 }

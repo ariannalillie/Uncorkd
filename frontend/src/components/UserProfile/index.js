@@ -19,8 +19,8 @@ console.log(currentUser)
                 <h1>Your Recent Activity</h1>
                 <hr/>
                 <div className="profile-header-container">
-                <div className='profile-image-container'></div>
-                <h2>{currentUser.name} visited 14 Hands Winery</h2>
+                <div className='profile-image-container user-activity-image'></div>
+                <h2 className="user-activity">{currentUser.name} visited 14 Hands Winery</h2>
                 </div>
 
             </div>

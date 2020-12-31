@@ -7,6 +7,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Wine.associate = function(models) {
     // associations can be defined here
+    Wine.hasMany(models.Review,{foreignKey:"wine_id"})
+    Wine.belongsTo(models.Winery,{foreignKey:"winery_id"})
   };
   return Wine;
 };
