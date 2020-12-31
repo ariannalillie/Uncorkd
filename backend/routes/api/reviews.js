@@ -1,13 +1,14 @@
 const express = require('express');
 const asyncHandler = require('express-async-handler');
 
-const { Post, User, Winery } = require('../../db/models');
+const { Review, User, Winery } = require('../../db/models');
 
 const router = express.Router();
 
-router.get('/', asyncHandler(async (req, res) => {
-    const posts = await Post.findAll({
-        includes: [User, Winery],
+router.get('/:id', asyncHandler(async (req, res) => {
+    const posts = await Review.findAll({
+        where: {winery_id: req.params.id},
+        include: [User, Winery],
     })
     res.json(posts);
 })
