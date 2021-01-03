@@ -14,6 +14,9 @@ module.exports = {
       rating: {
         type: Sequelize.INTEGER
       },
+      imgUrl: {
+        type: Sequelize.STRING
+      },
       user_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
