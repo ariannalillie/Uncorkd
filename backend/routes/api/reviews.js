@@ -10,6 +10,7 @@ router.get('/:id', asyncHandler(async (req, res) => {
         where: {winery_id: req.params.id},
         include: [User, Winery],
     })
+    console.log(await Review.findByPk(1))
     res.json(posts);
 })
 );
