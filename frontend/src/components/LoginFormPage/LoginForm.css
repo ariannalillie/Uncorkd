@@ -73,11 +73,11 @@
     margin-bottom: 30px;
     height: 40px;
     border-radius: 7px;
-    color: #2ed9c2;
+    color: #8b1932e1;
 }
 
 .form-button:hover {
-    background-color: #2ed9c2;
+    background-color: #8b1932e1;
     color: white;
 }
 

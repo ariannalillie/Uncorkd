@@ -1,0 +1,10 @@
+.review-container {
+    background-color: rgba(238, 213, 24, 0.118);
+    color: white;
+    padding-left: 20px;
+}
+
+.review-images {
+    height: 500px;
+    width: auto;
+}
